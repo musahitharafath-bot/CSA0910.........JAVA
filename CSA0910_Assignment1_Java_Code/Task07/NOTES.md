@@ -1,0 +1,2 @@
+# Task 7 — Override rules
+`@Override` asks the compiler to verify that the method really overrides a superclass method. The parameter list must match, the return type must be compatible, and access cannot be narrowed. `final` is appropriate for immutable registration numbers and methods whose equality contract should not be changed by subclasses. Equality based only on registration number means a Car and ElectricCar with the same registration compare equal; whether this is correct depends on whether registration number alone defines vehicle identity.

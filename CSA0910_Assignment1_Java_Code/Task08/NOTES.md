@@ -1,0 +1,2 @@
+# Task 8 — Polymorphism
+The array has declared type `Vehicle[]` but contains different runtime objects. `v.calculateFee(130)` dispatches to the object’s inherited method, which calls the overridden `ratePerHour()` implementation. Overloading is compile-time polymorphism; overriding and dynamic dispatch are runtime polymorphism. The example intentionally follows the assignment's equality rule for registration number.

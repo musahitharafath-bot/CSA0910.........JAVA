@@ -1,0 +1,2 @@
+# Task 4 — Object creation
+Overloaded constructors allow required fields to be set at creation time. `this(...)` constructor chaining avoids duplicated validation/initialisation. A copy constructor creates a distinct ticket object with copied values. Reference variables live in stack frames or object fields, while constructed objects live on the heap; objects become eligible for garbage collection when no reachable references remain.
