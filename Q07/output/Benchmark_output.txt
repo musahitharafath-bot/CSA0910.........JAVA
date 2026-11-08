@@ -1,0 +1,17 @@
+cores available = 1, files = 10000
+
+--- simulated storage latency per file: 0 ms  (best of 5 runs) ---
+threads     time (ms)   files/second   speed-up
+1                 182          54945      1.00x
+2                  98         102041      1.86x
+4                  92         108696      1.98x
+8                  82         121951      2.22x
+32                 85         117647      2.14x
+
+--- simulated storage latency per file: 1 ms  (best of 2 runs) ---
+threads     time (ms)   files/second   speed-up
+1               11470            872      1.00x
+2                5755           1738      1.99x
+4                2858           3499      4.01x
+8                1441           6940      7.96x
+32                381          26247     30.10x

@@ -1,0 +1,4 @@
+extras/BadCatchOrder.java:6: error: exception NumberFormatException has already been caught
+        catch (NumberFormatException e) { System.out.println("narrow"); }  // unreachable
+        ^
+1 error

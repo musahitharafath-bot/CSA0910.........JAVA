@@ -1,0 +1,2 @@
+input/store1.csv total=1150.00
+input/store2.csv total=160.00

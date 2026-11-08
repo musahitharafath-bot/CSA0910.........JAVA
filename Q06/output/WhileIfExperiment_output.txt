@@ -1,0 +1,5 @@
+while (loop) 300 trials: correct sum=300  wrong/stuck=  0  (counter went negative in 0 trials, stuck 0)
+if           300 trials: correct sum=205  wrong/stuck= 95  (counter went negative in 95 trials, stuck 0)
+
+notifyAll() capacity 1, 2 producers + 2 consumers: 40 of 40 trials completed, 0 deadlocked
+notify()   capacity 1, 2 producers + 2 consumers: 0 of 40 trials completed, 40 deadlocked

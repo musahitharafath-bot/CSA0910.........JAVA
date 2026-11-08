@@ -1,0 +1,2 @@
+Account: Amount :    [finally] card returned, session closed
+OK, balance left 2500

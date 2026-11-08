@@ -1,0 +1,1 @@
+public enum Status { OK, CORRUPT, INVALID, MISSING, IO_ERROR, UNEXPECTED }

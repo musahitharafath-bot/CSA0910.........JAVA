@@ -1,0 +1,5 @@
+S1 valid submission              -> SUCCESS: ans.pdf submitted
+S2 window closed                 -> REJECTED: Exam window closed at 12:00
+S3 not registered                -> REJECTED: S9 is not registered for CSA09
+S4 file too large                -> SORRY: your file was not saved (Could not store big.pdf). Please try a smaller file.
+S5 blank file name (unchecked)   -> BAD REQUEST: file name is blank

@@ -1,0 +1,2 @@
+holder calls Thread.sleep(400) inside synchronized : main waited 350 ms to enter
+holder calls lock.wait(400)    inside synchronized : main waited 0 ms to enter

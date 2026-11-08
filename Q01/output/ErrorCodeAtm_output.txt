@@ -1,0 +1,3 @@
+codes : 500 -1 -2 -3
+valid    input: error-code    72 ns/op | exception     3 ns/op
+invalid  input: error-code    74 ns/op | exception   311 ns/op

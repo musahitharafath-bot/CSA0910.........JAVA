@@ -1,0 +1,26 @@
+files submitted : 10
+  OK        : 5
+  CORRUPT   : 2
+  INVALID   : 1
+  MISSING   : 1
+  IO_ERROR  : 0
+  UNEXPECTED: 1
+sum of averages : 305.00 (OK files)
+summary complete: true (one outcome per file, counts add up to 10)
+first failures  :
+  bad_letters.txt -> CORRUPT: non-numeric mark 'xx'
+  empty.txt -> CORRUPT: empty file
+  invalid_range.txt -> INVALID: mark 101 outside 0..100
+  missing.txt -> MISSING: file not found
+  poison_bug.txt -> UNEXPECTED: java.lang.IllegalStateException: simulated bug while processing poison_bug.txt
+PASS OK count                       expected=5 actual=5
+PASS CORRUPT count (letters+empty)  expected=2 actual=2
+PASS INVALID count                  expected=1 actual=1
+PASS MISSING count                  expected=1 actual=1
+PASS UNEXPECTED count (poison)      expected=1 actual=1
+PASS total accounted                expected=10 actual=10
+PASS sum of averages (80+50+100+0+75) expected=305.00 actual=305.00
+PASS ok1 grade                      expected=A actual=A
+PASS ok4 grade                      expected=F actual=F
+PASS summary complete               expected=true actual=true
+10 passed, 0 failed

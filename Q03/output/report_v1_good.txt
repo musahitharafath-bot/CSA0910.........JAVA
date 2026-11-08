@@ -1,0 +1,5 @@
+input/store1.csv total=1150.00
+input/store2.csv total=160.00
+input/store3_fixed.csv total=240.00
+input/store4.csv total=1633.00
+GRAND TOTAL=3183.00

@@ -1,0 +1,7 @@
+sleeper after new      : NEW
+sleeper after start    : RUNNABLE
+sleeper inside sleep() : TIMED_WAITING
+sleeper after finish   : TERMINATED
+blocked, lock held     : BLOCKED
+waiter inside wait()   : WAITING
+waiter after notify    : TERMINATED

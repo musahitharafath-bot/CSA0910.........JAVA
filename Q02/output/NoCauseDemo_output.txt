@@ -1,0 +1,3 @@
+Error: Could not store answer02.pdf
+getCause() = null
+Cause line -> NullPointerException (getCause() is null)

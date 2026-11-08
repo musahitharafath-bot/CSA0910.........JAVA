@@ -1,0 +1,21 @@
+T1 valid withdrawal  (acc=ACC1001, amt='1500')
+   [finally] card returned, session closed
+   -> OK, balance left 3500
+T2 letters as amount  (acc=ACC1001, amt='abc')
+   [finally] card returned, session closed
+   -> catch multi(NumberFormat|ArrayIndex): invalid number or malformed record -> For input string: "abc"
+T3 negative amount  (acc=ACC1001, amt='-300')
+   [finally] card returned, session closed
+   -> catch IllegalArgumentException: Amount must be positive
+T4 more than balance  (acc=ACC1002, amt='900')
+   [finally] card returned, session closed
+   -> catch InsufficientFundsException: Balance 200 < requested 900
+T5 card file missing  (acc=ACC1001, amt='100')
+   [finally] card returned, session closed
+   -> catch FileNotFoundException: card reader file missing
+T6 unknown account  (acc=ACC9999, amt='100')
+   [finally] card returned, session closed
+   -> catch RuntimeException: Unknown account ACC9999
+T7 empty amount  (acc=ACC1001, amt='')
+   [finally] card returned, session closed
+   -> catch multi(NumberFormat|ArrayIndex): invalid number or malformed record -> For input string: ""

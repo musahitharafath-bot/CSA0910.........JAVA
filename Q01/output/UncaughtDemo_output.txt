@@ -1,0 +1,8 @@
+Before
+Exception in thread "main" java.lang.NumberFormatException: For input string: "12x"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:778)
+	at UncaughtDemo.parseAmount(UncaughtDemo.java:3)
+	at UncaughtDemo.withdraw(UncaughtDemo.java:4)
+	at UncaughtDemo.main(UncaughtDemo.java:7)

@@ -1,0 +1,3 @@
+mode=USER: main() ends at 207 ms
+  Station-4 finished its batch after 1507 ms
+mode=DAEMON: main() ends at 206 ms

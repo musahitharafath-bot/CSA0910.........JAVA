@@ -1,0 +1,7 @@
+T2 (B->A) locked Acc2(1000), waiting for Acc1(1000)
+T1 (A->B) locked Acc1(1000), waiting for Acc2(1000)
+after 1.5 s: T1 alive=true, T2 alive=true
+JVM deadlock detector found 2 deadlocked threads:
+   T1 (A->B) state=BLOCKED waits for Account@4c873330 owned by T2 (B->A)
+   T2 (B->A) state=BLOCKED waits for Account@6d311334 owned by T1 (A->B)
+balances unchanged: Acc1(1000) Acc2(1000)

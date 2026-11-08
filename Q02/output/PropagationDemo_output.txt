@@ -1,0 +1,5 @@
+Caught by controller. Propagation path (innermost first):
+   Storage.save()  line 9
+   SubmissionService.submit()  line 16
+   PropagationDemo.main()  line 4
+Root cause: java.io.IOException - Disk quota exceeded: 800 KB > 500 KB

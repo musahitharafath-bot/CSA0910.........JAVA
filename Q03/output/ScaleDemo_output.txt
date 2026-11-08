@@ -1,0 +1,2 @@
+V2 try-with-resources : 1000 files done, max handles open at once = 2, open at end = 0
+V3 no close           : FAILED after 249 handles -> /tmp/stores2051304810817966079/s248.csv (Too many open files)
