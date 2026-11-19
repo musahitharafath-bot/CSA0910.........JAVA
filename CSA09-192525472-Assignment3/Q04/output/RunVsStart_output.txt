@@ -1,0 +1,8 @@
+main thread is: main  (id 1)
+t1.run():
+   body executes in thread: main  (id 1)
+   t1 state after run(): NEW
+t2.start():
+   body executes in thread: worker-B  (id 14)
+   t2 state after join(): TERMINATED
+t2.start() again -> java.lang.IllegalThreadStateException

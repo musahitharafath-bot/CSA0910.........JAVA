@@ -1,0 +1,31 @@
+=== equal priorities ===
+run  1 finish order: S2 S1 S3 S4
+run  2 finish order: S2 S4 S3 S1
+run  3 finish order: S3 S2 S1 S4
+run  4 finish order: S1 S2 S4 S3
+run  5 finish order: S4 S3 S2 S1
+run  6 finish order: S2 S3 S4 S1
+run  7 finish order: S3 S1 S4 S2
+run  8 finish order: S3 S4 S1 S2
+run  9 finish order: S1 S2 S4 S3
+run 10 finish order: S4 S3 S1 S2
+run 11 finish order: S4 S1 S3 S2
+run 12 finish order: S1 S3 S2 S4
+distinct orders seen : 11 of 12 runs
+who finished first   : {S1=3, S2=3, S3=3, S4=3}
+
+=== S1=MIN_PRIORITY(1), S4=MAX_PRIORITY(10), others NORM(5) ===
+run  1 finish order: S4 S3 S2 S1
+run  2 finish order: S4 S2 S3 S1
+run  3 finish order: S2 S3 S1 S4
+run  4 finish order: S4 S3 S2 S1
+run  5 finish order: S1 S3 S2 S4
+run  6 finish order: S2 S4 S3 S1
+run  7 finish order: S1 S2 S4 S3
+run  8 finish order: S4 S2 S3 S1
+run  9 finish order: S4 S2 S1 S3
+run 10 finish order: S3 S2 S4 S1
+run 11 finish order: S4 S3 S2 S1
+run 12 finish order: S4 S1 S3 S2
+distinct orders seen : 9 of 12 runs
+who finished first   : {S1=2, S2=2, S3=1, S4=7}

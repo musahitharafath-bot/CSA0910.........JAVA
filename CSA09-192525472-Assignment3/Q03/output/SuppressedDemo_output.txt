@@ -1,0 +1,13 @@
+open  reader
+open  writer
+body runs
+close writer
+close reader
+PRIMARY   : java.lang.IllegalStateException: body failed
+SUPPRESSED: java.lang.Exception: close() failed for writer
+SUPPRESSED: java.lang.Exception: close() failed for reader
+-- body fine, close fails: it becomes the primary exception --
+open  only
+body ok
+close only
+PRIMARY   : java.lang.Exception: close() failed for only  suppressed=0

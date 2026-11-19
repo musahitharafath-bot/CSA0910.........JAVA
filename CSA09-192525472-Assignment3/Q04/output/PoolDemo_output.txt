@@ -1,0 +1,8 @@
+n = 400 scripts, 40 batches of 10, 20 ms per batch
+approach                     time(ms)   expected(ms)  threads created
+Thread per batch                   26             20               40
+FixedThreadPool(1)                817            800                1
+FixedThreadPool(2)                406            400                2
+FixedThreadPool(4)                204            200                4
+FixedThreadPool(8)                102            100                8
+Default thread stack size (-Xss) reserved per thread: 1024 KB -> 40 threads reserve ~40 MB, a pool of 4 reserves ~4 MB

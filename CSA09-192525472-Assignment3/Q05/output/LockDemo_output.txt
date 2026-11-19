@@ -1,0 +1,7 @@
+synchronized instance method: holds lock(this)=true, holds lock(LockDemo.class)=false
+synchronized(this) block      : holds lock(this)=true
+static synchronized method  : holds lock(LockDemo.class)=true
+Do two screens share the instance lock? a==b -> false (different monitors)
+global ticket counter, expected 100000
+  instance-synchronized : 50132
+  static-synchronized   : 100000

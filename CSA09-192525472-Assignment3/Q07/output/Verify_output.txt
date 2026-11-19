@@ -1,0 +1,26 @@
+files submitted : 10000
+  OK        : 9616
+  CORRUPT   : 220
+  INVALID   : 50
+  MISSING   : 100
+  IO_ERROR  : 10
+  UNEXPECTED: 4
+sum of averages : 480842.60 (OK files)
+summary complete: true (one outcome per file, counts add up to 10000)
+first failures  :
+  score_00007.txt -> CORRUPT: non-numeric mark 'x40'
+  score_00013.txt -> MISSING: file not found
+  score_00021.txt -> INVALID: mark 140 outside 0..100
+  score_00033.txt -> CORRUPT: empty file
+  score_00057.txt -> CORRUPT: non-numeric mark 'x18'
+  score_00107.txt -> CORRUPT: non-numeric mark 'x62'
+  score_00113.txt -> MISSING: file not found
+  score_00157.txt -> CORRUPT: non-numeric mark 'x32'
+PASS OK         expected=9616 actual=9616
+PASS CORRUPT    expected=220 actual=220
+PASS INVALID    expected=50 actual=50
+PASS MISSING    expected=100 actual=100
+PASS IO_ERROR   expected=10 actual=10
+PASS UNEXPECTED expected=4 actual=4
+PASS sumOfAverages expected=480842.60 actual=480842.60
+ALL CHECKS PASSED

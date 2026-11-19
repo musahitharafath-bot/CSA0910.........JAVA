@@ -1,0 +1,19 @@
+--- good input (4 files) ---
+V0 naive               completed                    open handles left=0 []  report bytes=148
+V1 finally             completed                    open handles left=0 []  report bytes=148
+V2 try-with-res        completed                    open handles left=0 []  report bytes=148
+V3 no close            completed                    open handles left=5 [output/report_v3_good.txt, input/store1.csv, input/store2.csv, input/store3_fixed.csv, input/store4.csv]  report bytes=0
+V1 report identical to V2 report: true
+input/store1.csv total=1150.00
+input/store2.csv total=160.00
+input/store3_fixed.csv total=240.00
+input/store4.csv total=1633.00
+GRAND TOTAL=3183.00
+--- failing input (corrupt record in store3) ---
+V0 naive               FAILED on input/store3_corrupt.csv open handles left=2 [output/report_v0_bad.txt, input/store3_corrupt.csv]  report bytes=0
+V1 finally             FAILED on input/store3_corrupt.csv open handles left=0 []  report bytes=61
+V2 try-with-res        FAILED on input/store3_corrupt.csv open handles left=0 []  report bytes=61
+V3 no close            FAILED on input/store3_corrupt.csv open handles left=4 [output/report_v3_bad.txt, input/store1.csv, input/store2.csv, input/store3_corrupt.csv]  report bytes=0
+Partial report written by V2:
+input/store1.csv total=1150.00
+input/store2.csv total=160.00

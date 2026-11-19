@@ -1,0 +1,2 @@
+the deadlocking pair with tryLock finished: Acc1(950) Acc2(1050)  retries=1
+stress: 160,000 transfers finished, total money = 10000 (expected 10000), 1321 ns/transfer, retries=45

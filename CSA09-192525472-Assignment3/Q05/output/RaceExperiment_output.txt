@@ -1,0 +1,19 @@
+### Student A: reproducing the race (100 threads, 10 seats, 200 runs)
+Unsafe (no sync)             runs=200  runs with double booking=  0  max sold= 10  average sold=10.00
+Unsafe (yield in window)     runs=200  runs with double booking=172  max sold= 36  average sold=11.32
+SyncMethod                   runs=200  runs with double booking=  0  max sold= 10  average sold=10.00
+SyncBlock                    runs=200  runs with double booking=  0  max sold= 10  average sold=10.00
+ReentrantLock                runs=200  runs with double booking=  0  max sold= 10  average sold=10.00
+AtomicBoolean CAS            runs=200  runs with double booking=  0  max sold= 10  average sold=10.00
+ConcurrentHashMap            runs=200  runs with double booking=  0  max sold= 10  average sold=10.00
+
+### Student B: 10,000 bookings, 8 threads, best of 5 timed repetitions (ns per booking)
+version                  LOW contention  HIGH contention    with 100us I/O wait
+                         (10,000 seats)      (100 seats)       (2,000 bookings)
+SyncMethod (whole)                 2065             2198                 166719
+SyncBlock (critical)               2126             1772                  20699
+ReentrantLock                      1986             1601                  20480
+AtomicBoolean CAS                  1591             1598                  20112
+ConcurrentHashMap                  1417             1565                  20597
+single-thread baseline (SyncBlock, no contention): 1950 ns per booking
+(cores available: 1)

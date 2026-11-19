@@ -1,0 +1,10 @@
+depth    kind                         ns/exc    bytes/exc
+5        single exception               2025         1160
+5        chained (outer+inner)          2348         1888
+5        no stack trace                  168           56
+50       single exception               7982         4360
+50       chained (outer+inner)          7409         5776
+50       no stack trace                   37           56
+500      single exception              63195        39192
+500      chained (outer+inner)         73068        50240
+500      no stack trace                  337           56

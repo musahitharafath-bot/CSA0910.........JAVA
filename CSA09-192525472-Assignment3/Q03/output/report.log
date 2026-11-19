@@ -1,0 +1,4 @@
+SEVERE file=input/store3_corrupt.csv line=2 text='book,abc,150.50' cause=java.lang.NumberFormatException: For input string: "abc"
+SEVERE file=input/store3_corrupt.csv line=2 text='book,abc,150.50' cause=java.lang.NumberFormatException: For input string: "abc"
+SEVERE file=input/store3_corrupt.csv line=2 text='book,abc,150.50' cause=java.lang.NumberFormatException: For input string: "abc"
+SEVERE file=input/store3_corrupt.csv line=2 text='book,abc,150.50' cause=java.lang.NumberFormatException: For input string: "abc"

@@ -1,0 +1,9 @@
+generated 10000 files in data
+files=10000
+OK=9616
+CORRUPT=220
+INVALID=50
+MISSING=100
+IO_ERROR=10
+UNEXPECTED=4
+sumOfAverages=480842.60

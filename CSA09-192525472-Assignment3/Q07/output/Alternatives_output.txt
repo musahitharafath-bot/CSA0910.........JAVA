@@ -1,0 +1,14 @@
+cores = 1, common pool parallelism = 1
+
+[1] parallelStream WITHOUT per-element try/catch (a bug in one file)
+    WHOLE STREAM FAILED: java.lang.RuntimeException: java.lang.IllegalStateException: simulated bug while processing score_poison_02505.txt  -> no summary is produced at all
+
+[2] parallelStream WITH per-element try/catch (same outcomes as the executor design)
+    counts = {OK=9616, CORRUPT=220, INVALID=50, MISSING=100, IO_ERROR=10, UNEXPECTED=4}  time = 347 ms
+
+[3] parallelStream with 1 ms simulated latency per file (blocking I/O inside a stream)
+    time = 5630 ms for 10000 files (common pool has only 1 worker(s) + caller)
+
+[4] one thread per file (10,000 threads), pure processing, no latency
+    done=10000  unexpected failures caught=4  time=1600 ms
+    peak simultaneously live task threads = 19, threads started in total = 10000; worst case memory = threads x stack (1 MB) = 10000 MB reserved if all were alive at once

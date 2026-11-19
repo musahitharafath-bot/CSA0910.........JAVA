@@ -1,0 +1,5 @@
+operations recorded : 40 (20 puts + 20 takes)
+counter size after each operation: [1, 2, 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3, 2, 1, 2, 3, 4, 3, 2, 1, 2, 3, 4, 3, 2, 1, 2, 3, 4, 3, 4, 5, 4, 3, 2, 1, 0]
+minimum = 0  maximum = 5   (limits are 0 and 5)
+as a strip: 1232101232101232123432123432123434543210
+sum collected = 210 (expected 210)

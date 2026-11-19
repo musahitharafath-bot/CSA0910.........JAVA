@@ -1,0 +1,2 @@
+the SAME two transfers with lock ordering finished: Acc1(950) Acc2(1050)
+stress: 160,000 transfers finished (no deadlock), total money = 10000 (expected 10000), 233 ns/transfer

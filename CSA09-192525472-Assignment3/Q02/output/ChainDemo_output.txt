@@ -1,0 +1,19 @@
+=== WITH cause ===
+getMessage()       : Could not store big.pdf
+getCause()         : java.io.IOException: Disk quota exceeded: 800 KB > 500 KB
+getCause().getMsg(): Disk quota exceeded: 800 KB > 500 KB
+SubmissionStorageException: Could not store big.pdf
+	at ChainDemo.layerSave(ChainDemo.java:7)
+	at ChainDemo.layerService(ChainDemo.java:11)
+	at ChainDemo.main(ChainDemo.java:14)
+Caused by: java.io.IOException: Disk quota exceeded: 800 KB > 500 KB
+	at ChainDemo.layerSave(ChainDemo.java:5)
+	... 2 more
+
+=== WITHOUT cause ===
+getCause()         : null
+SubmissionStorageException: Could not store big.pdf
+	at ChainDemo.layerSave(ChainDemo.java:8)
+	at ChainDemo.layerService(ChainDemo.java:11)
+	at ChainDemo.main(ChainDemo.java:23)
+LOST: the IOException type, its message (quota 800 > 500) and the line where it started.

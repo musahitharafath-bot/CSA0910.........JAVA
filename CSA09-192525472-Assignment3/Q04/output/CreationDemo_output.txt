@@ -1,0 +1,15 @@
+=== extends Thread ===
+alive after 20 ms : true true true true
+Station-1 finished, scanned 25
+Station-2 finished, scanned 30
+Station-3 finished, scanned 35
+Station-4 finished, scanned 40
+alive after join  : false false false false
+TOTAL scanned (extends Thread) = 130
+
+=== implements Runnable ===
+Station-1 finished, scanned 25
+Station-2 finished, scanned 30
+Station-3 finished, scanned 35
+Station-4 finished, scanned 40
+TOTAL scanned (Runnable)       = 130   (printed only after every join() returned)
