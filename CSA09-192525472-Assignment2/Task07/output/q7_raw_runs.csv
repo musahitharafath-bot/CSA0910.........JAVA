@@ -1,0 +1,153 @@
+workload,variant,rep,total_ns,tickets,fields
+"W1 short ticket (8 fields, 20000 repeats)",Original (String +),1,3848468,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Original (String +),2,6134680,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Original (String +),3,3806873,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Original (String +),4,3854987,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Original (String +),5,19388487,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Original (String +),6,11004705,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Original (String +),7,10952182,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Original (String +),8,8569848,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Original (String +),9,3712588,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Original (String +),10,5578235,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Original (String +),11,3738751,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Original (String +),12,4192468,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Original (String +),13,3625961,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Original (String +),14,3734081,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Original (String +),15,6045153,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Plain StringBuilder (Q1),1,3004408,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Plain StringBuilder (Q1),2,2944834,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Plain StringBuilder (Q1),3,3233482,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Plain StringBuilder (Q1),4,3013563,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Plain StringBuilder (Q1),5,8125566,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Plain StringBuilder (Q1),6,9404968,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Plain StringBuilder (Q1),7,8346183,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Plain StringBuilder (Q1),8,9597708,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Plain StringBuilder (Q1),9,9091932,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Plain StringBuilder (Q1),10,9334646,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Plain StringBuilder (Q1),11,9445579,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Plain StringBuilder (Q1),12,9025967,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Plain StringBuilder (Q1),13,8917989,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Plain StringBuilder (Q1),14,8570905,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",Plain StringBuilder (Q1),15,6723513,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R1 reused builder -> String,1,3201775,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R1 reused builder -> String,2,3249891,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R1 reused builder -> String,3,3485489,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R1 reused builder -> String,4,1976456,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R1 reused builder -> String,5,2324948,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R1 reused builder -> String,6,1980166,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R1 reused builder -> String,7,1930691,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R1 reused builder -> String,8,2428397,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R1 reused builder -> String,9,1902306,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R1 reused builder -> String,10,1546863,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R1 reused builder -> String,11,1583795,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R1 reused builder -> String,12,1533392,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R1 reused builder -> String,13,1487168,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R1 reused builder -> String,14,1507631,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R1 reused builder -> String,15,1488738,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R2 reused builder -> page buffer,1,1490401,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R2 reused builder -> page buffer,2,1099276,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R2 reused builder -> page buffer,3,1104578,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R2 reused builder -> page buffer,4,1058076,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R2 reused builder -> page buffer,5,1139508,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R2 reused builder -> page buffer,6,1095850,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R2 reused builder -> page buffer,7,1079597,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R2 reused builder -> page buffer,8,1072755,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R2 reused builder -> page buffer,9,1045290,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R2 reused builder -> page buffer,10,1032944,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R2 reused builder -> page buffer,11,1030727,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R2 reused builder -> page buffer,12,1036941,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R2 reused builder -> page buffer,13,1064654,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R2 reused builder -> page buffer,14,1050009,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",R2 reused builder -> page buffer,15,1032773,20000,8
+"W2 heavy load (10000 tickets x 50 fields)",Original (String +),1,38635741,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Original (String +),2,49155477,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Original (String +),3,42663605,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Original (String +),4,35883973,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Original (String +),5,38455091,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Original (String +),6,48140465,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Original (String +),7,50045394,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Original (String +),8,39433038,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Original (String +),9,39405968,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Original (String +),10,38206144,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Original (String +),11,36448920,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Original (String +),12,36149921,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Original (String +),13,37705113,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Original (String +),14,37461432,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Original (String +),15,37670653,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Plain StringBuilder (Q1),1,7552120,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Plain StringBuilder (Q1),2,7136450,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Plain StringBuilder (Q1),3,6688836,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Plain StringBuilder (Q1),4,6607498,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Plain StringBuilder (Q1),5,6788286,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Plain StringBuilder (Q1),6,6827203,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Plain StringBuilder (Q1),7,7137889,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Plain StringBuilder (Q1),8,7289147,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Plain StringBuilder (Q1),9,8666900,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Plain StringBuilder (Q1),10,6678642,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Plain StringBuilder (Q1),11,6594620,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Plain StringBuilder (Q1),12,6655489,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Plain StringBuilder (Q1),13,6684680,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Plain StringBuilder (Q1),14,6587594,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",Plain StringBuilder (Q1),15,6519080,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R1 reused builder -> String,1,4675755,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R1 reused builder -> String,2,4730745,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R1 reused builder -> String,3,4443128,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R1 reused builder -> String,4,4560542,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R1 reused builder -> String,5,4352079,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R1 reused builder -> String,6,4497067,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R1 reused builder -> String,7,4388815,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R1 reused builder -> String,8,5852598,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R1 reused builder -> String,9,4416136,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R1 reused builder -> String,10,4571636,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R1 reused builder -> String,11,4483949,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R1 reused builder -> String,12,4575250,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R1 reused builder -> String,13,4660643,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R1 reused builder -> String,14,4485454,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R1 reused builder -> String,15,4506301,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R2 reused builder -> page buffer,1,3082923,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R2 reused builder -> page buffer,2,3156689,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R2 reused builder -> page buffer,3,3092741,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R2 reused builder -> page buffer,4,3137540,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R2 reused builder -> page buffer,5,3078638,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R2 reused builder -> page buffer,6,3342591,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R2 reused builder -> page buffer,7,3140837,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R2 reused builder -> page buffer,8,3116518,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R2 reused builder -> page buffer,9,3191595,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R2 reused builder -> page buffer,10,3086197,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R2 reused builder -> page buffer,11,3097543,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R2 reused builder -> page buffer,12,3128857,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R2 reused builder -> page buffer,13,3161474,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R2 reused builder -> page buffer,14,3126648,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",R2 reused builder -> page buffer,15,3044155,10000,50
+"W3 group booking (100 tickets x 1000 fields)",Original (String +),1,164649901,100,1000
+"W3 group booking (100 tickets x 1000 fields)",Original (String +),2,158784321,100,1000
+"W3 group booking (100 tickets x 1000 fields)",Original (String +),3,149598624,100,1000
+"W3 group booking (100 tickets x 1000 fields)",Original (String +),4,151067987,100,1000
+"W3 group booking (100 tickets x 1000 fields)",Original (String +),5,156021757,100,1000
+"W3 group booking (100 tickets x 1000 fields)",Original (String +),6,162259200,100,1000
+"W3 group booking (100 tickets x 1000 fields)",Original (String +),7,157816157,100,1000
+"W3 group booking (100 tickets x 1000 fields)",Original (String +),8,153682849,100,1000
+"W3 group booking (100 tickets x 1000 fields)",Plain StringBuilder (Q1),1,1870100,100,1000
+"W3 group booking (100 tickets x 1000 fields)",Plain StringBuilder (Q1),2,1763912,100,1000
+"W3 group booking (100 tickets x 1000 fields)",Plain StringBuilder (Q1),3,1832892,100,1000
+"W3 group booking (100 tickets x 1000 fields)",Plain StringBuilder (Q1),4,1750713,100,1000
+"W3 group booking (100 tickets x 1000 fields)",Plain StringBuilder (Q1),5,1816747,100,1000
+"W3 group booking (100 tickets x 1000 fields)",Plain StringBuilder (Q1),6,1844217,100,1000
+"W3 group booking (100 tickets x 1000 fields)",Plain StringBuilder (Q1),7,1792595,100,1000
+"W3 group booking (100 tickets x 1000 fields)",Plain StringBuilder (Q1),8,1871865,100,1000
+"W3 group booking (100 tickets x 1000 fields)",R1 reused builder -> String,1,927149,100,1000
+"W3 group booking (100 tickets x 1000 fields)",R1 reused builder -> String,2,963306,100,1000
+"W3 group booking (100 tickets x 1000 fields)",R1 reused builder -> String,3,924931,100,1000
+"W3 group booking (100 tickets x 1000 fields)",R1 reused builder -> String,4,899203,100,1000
+"W3 group booking (100 tickets x 1000 fields)",R1 reused builder -> String,5,935847,100,1000
+"W3 group booking (100 tickets x 1000 fields)",R1 reused builder -> String,6,964403,100,1000
+"W3 group booking (100 tickets x 1000 fields)",R1 reused builder -> String,7,951580,100,1000
+"W3 group booking (100 tickets x 1000 fields)",R1 reused builder -> String,8,914683,100,1000
+"W3 group booking (100 tickets x 1000 fields)",R2 reused builder -> page buffer,1,703692,100,1000
+"W3 group booking (100 tickets x 1000 fields)",R2 reused builder -> page buffer,2,692543,100,1000
+"W3 group booking (100 tickets x 1000 fields)",R2 reused builder -> page buffer,3,715206,100,1000
+"W3 group booking (100 tickets x 1000 fields)",R2 reused builder -> page buffer,4,708810,100,1000
+"W3 group booking (100 tickets x 1000 fields)",R2 reused builder -> page buffer,5,691226,100,1000
+"W3 group booking (100 tickets x 1000 fields)",R2 reused builder -> page buffer,6,705697,100,1000
+"W3 group booking (100 tickets x 1000 fields)",R2 reused builder -> page buffer,7,699586,100,1000
+"W3 group booking (100 tickets x 1000 fields)",R2 reused builder -> page buffer,8,703006,100,1000

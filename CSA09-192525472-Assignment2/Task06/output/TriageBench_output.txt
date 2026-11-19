@@ -1,0 +1,21 @@
+PriorityQueue     n=1000     admit       96.2 ns/op (sd 9.3)   serve      263.9 ns/op (sd 28.7)   4.7 B/patient
+SortedLinkedList  n=1000     admit     2429.8 ns/op (sd 2536.2)   serve       45.3 ns/op (sd 9.2)   24.0 B/patient
+FiveFifoQueues    n=1000     admit      128.2 ns/op (sd 45.2)   serve      196.4 ns/op (sd 77.8)   5.3 B/patient
+
+PriorityQueue     n=10000    admit       56.8 ns/op (sd 2.8)   serve      317.1 ns/op (sd 7.4)   5.3 B/patient
+SortedLinkedList  n=10000    admit    15262.1 ns/op (sd 787.0)   serve       18.8 ns/op (sd 19.1)   24.0 B/patient
+FiveFifoQueues    n=10000    admit       46.7 ns/op (sd 2.2)   serve       38.9 ns/op (sd 0.9)   5.7 B/patient
+
+PriorityQueue     n=100000   admit       45.4 ns/op (sd 15.9)   serve      315.5 ns/op (sd 11.1)   10.5 B/patient
+FiveFifoQueues    n=100000   admit       12.4 ns/op (sd 7.2)   serve        8.8 ns/op (sd 0.6)   4.3 B/patient
+
+PriorityQueue     n=1000000  admit       56.7 ns/op (sd 12.6)   serve      474.0 ns/op (sd 35.9)   5.2 B/patient
+FiveFifoQueues    n=1000000  admit       15.4 ns/op (sd 5.5)   serve        9.6 ns/op (sd 2.2)   5.2 B/patient
+
+PriorityQueue.remove(Object), a patient who leaves without being seen:
+  n=1000         178.7 ns per remove
+  n=10000       1268.2 ns per remove
+  n=100000     11425.2 ns per remove
+
+Simulated day with 5,000 patients (interleaved admit/serve, peak queue length recorded):
+  mean total time for the day: 1.659 ms (sd 1.194), peak queue length 1468

@@ -1,0 +1,6 @@
+Playlist     : [Kun Faya Kun, Tum Hi Ho, Believer, Chaiyya Chaiyya, Kal Ho Naa Ho]
+3rd song     : Believer
+Characters   : 57
+Up Next      : [Fix You, Perfect, Yellow]
+Now playing  : Fix You
+Up Next now  : [Perfect, Yellow]

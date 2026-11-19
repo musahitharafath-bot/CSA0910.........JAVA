@@ -1,0 +1,116 @@
+approach,n,rep,ms
+Comparator chain (List.sort),10000,1,4.541
+Comparator chain (List.sort),10000,2,4.040
+Comparator chain (List.sort),10000,3,3.732
+Comparator chain (List.sort),10000,4,4.531
+Comparator chain (List.sort),10000,5,3.950
+Comparator chain (List.sort),10000,6,3.821
+Comparator chain (List.sort),10000,7,4.850
+Comparator chain (List.sort),10000,8,5.098
+Comparator chain (List.sort),10000,9,4.168
+Comparator chain (Collections.sort),10000,1,4.430
+Comparator chain (Collections.sort),10000,2,4.017
+Comparator chain (Collections.sort),10000,3,3.257
+Comparator chain (Collections.sort),10000,4,3.127
+Comparator chain (Collections.sort),10000,5,3.572
+Comparator chain (Collections.sort),10000,6,6.645
+Comparator chain (Collections.sort),10000,7,3.771
+Comparator chain (Collections.sort),10000,8,10.089
+Comparator chain (Collections.sort),10000,9,4.071
+Hand-written comparator,10000,1,7.914
+Hand-written comparator,10000,2,13.066
+Hand-written comparator,10000,3,8.741
+Hand-written comparator,10000,4,5.698
+Hand-written comparator,10000,5,6.008
+Hand-written comparator,10000,6,3.881
+Hand-written comparator,10000,7,3.399
+Hand-written comparator,10000,8,3.121
+Hand-written comparator,10000,9,2.732
+Three stable sorts,10000,1,14.199
+Three stable sorts,10000,2,17.773
+Three stable sorts,10000,3,13.572
+Three stable sorts,10000,4,11.770
+Three stable sorts,10000,5,11.226
+Three stable sorts,10000,6,11.434
+Three stable sorts,10000,7,10.666
+Three stable sorts,10000,8,9.738
+Three stable sorts,10000,9,8.008
+Comparable (Collections.sort),10000,1,3.033
+Comparable (Collections.sort),10000,2,2.880
+Comparable (Collections.sort),10000,3,2.739
+Comparable (Collections.sort),10000,4,2.810
+Comparable (Collections.sort),10000,5,3.110
+Comparable (Collections.sort),10000,6,4.029
+Comparable (Collections.sort),10000,7,4.925
+Comparable (Collections.sort),10000,8,3.429
+Comparable (Collections.sort),10000,9,3.158
+Comparator chain (List.sort),100000,1,52.842
+Comparator chain (List.sort),100000,2,47.756
+Comparator chain (List.sort),100000,3,46.232
+Comparator chain (List.sort),100000,4,46.830
+Comparator chain (List.sort),100000,5,48.576
+Comparator chain (List.sort),100000,6,51.343
+Comparator chain (List.sort),100000,7,50.457
+Comparator chain (List.sort),100000,8,44.318
+Comparator chain (List.sort),100000,9,45.618
+Comparator chain (Collections.sort),100000,1,45.883
+Comparator chain (Collections.sort),100000,2,47.185
+Comparator chain (Collections.sort),100000,3,46.828
+Comparator chain (Collections.sort),100000,4,47.833
+Comparator chain (Collections.sort),100000,5,46.860
+Comparator chain (Collections.sort),100000,6,49.956
+Comparator chain (Collections.sort),100000,7,44.001
+Comparator chain (Collections.sort),100000,8,45.010
+Comparator chain (Collections.sort),100000,9,46.247
+Hand-written comparator,100000,1,38.380
+Hand-written comparator,100000,2,35.898
+Hand-written comparator,100000,3,35.647
+Hand-written comparator,100000,4,36.046
+Hand-written comparator,100000,5,35.552
+Hand-written comparator,100000,6,36.492
+Hand-written comparator,100000,7,36.184
+Hand-written comparator,100000,8,35.684
+Hand-written comparator,100000,9,34.927
+Three stable sorts,100000,1,151.215
+Three stable sorts,100000,2,123.491
+Three stable sorts,100000,3,141.392
+Three stable sorts,100000,4,137.286
+Three stable sorts,100000,5,136.090
+Three stable sorts,100000,6,116.048
+Three stable sorts,100000,7,111.074
+Three stable sorts,100000,8,112.370
+Three stable sorts,100000,9,109.215
+Comparable (Collections.sort),100000,1,38.048
+Comparable (Collections.sort),100000,2,39.536
+Comparable (Collections.sort),100000,3,37.652
+Comparable (Collections.sort),100000,4,39.478
+Comparable (Collections.sort),100000,5,40.107
+Comparable (Collections.sort),100000,6,37.597
+Comparable (Collections.sort),100000,7,38.906
+Comparable (Collections.sort),100000,8,41.822
+Comparable (Collections.sort),100000,9,45.944
+Comparator chain (List.sort),1000000,1,898.522
+Comparator chain (List.sort),1000000,2,995.211
+Comparator chain (List.sort),1000000,3,935.082
+Comparator chain (List.sort),1000000,4,1178.162
+Comparator chain (List.sort),1000000,5,976.289
+Comparator chain (Collections.sort),1000000,1,858.381
+Comparator chain (Collections.sort),1000000,2,856.845
+Comparator chain (Collections.sort),1000000,3,873.360
+Comparator chain (Collections.sort),1000000,4,859.328
+Comparator chain (Collections.sort),1000000,5,907.827
+Hand-written comparator,1000000,1,718.779
+Hand-written comparator,1000000,2,738.443
+Hand-written comparator,1000000,3,715.246
+Hand-written comparator,1000000,4,709.482
+Hand-written comparator,1000000,5,728.076
+Three stable sorts,1000000,1,1657.706
+Three stable sorts,1000000,2,1736.020
+Three stable sorts,1000000,3,1594.316
+Three stable sorts,1000000,4,1690.855
+Three stable sorts,1000000,5,1690.119
+Comparable (Collections.sort),1000000,1,906.842
+Comparable (Collections.sort),1000000,2,924.004
+Comparable (Collections.sort),1000000,3,931.399
+Comparable (Collections.sort),1000000,4,1082.824
+Comparable (Collections.sort),1000000,5,1298.911

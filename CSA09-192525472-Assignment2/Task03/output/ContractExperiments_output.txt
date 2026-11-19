@@ -1,0 +1,28 @@
+
+=== Test 1 - the same card objects are re-used at each gate
+Prediction: 2. Adding the SAME object twice gives the same identity hash, the same bucket and equals() is true (== check).
+Observed size = 2   (BadStudent works only because the references are identical)
+
+=== Test 2 - a NEW Student object is created for every scan (8 scans, 5 distinct students)
+Prediction: BadStudent -> 8 (every object has a different identity hash code, so equals() is never even called); GoodStudent -> 5.
+Observed BadStudent  size = 8
+Observed GoodStudent size = 5
+x1.equals(x2) = true, hashCodes 821270929 vs 1160460865, buckets (table 16) 2 vs 10
+GoodStudent hash for 192311001 = 822376264
+
+=== Test 3a - regNo is changed after the object was added (hashCode uses regNo)
+Prediction: size stays 1, but contains(s) becomes false and remove(s) fails because the object sits in the old bucket.
+before change: contains = true, size = 1
+after change : contains = false, size = 1, remove = false
+add same object again: size = 2  (the same object is now stored twice)
+
+=== Test 3b - TreeSet ordered by name only, equals() on regNo
+Prediction: TreeSet size 1 (compare == 0 means 'duplicate'), HashSet size 2 (different regNo).
+Observed TreeSet size = 1, HashSet size = 2
+
+=== Test 4 - hashCode() constant 42 (legal, equals consistent) - cost of collisions
+n        constant-hash ms    regNo-hash ms
+2000                15.37             0.30
+4000                59.82             0.46
+8000               245.93             0.63
+16000             1755.42             1.23

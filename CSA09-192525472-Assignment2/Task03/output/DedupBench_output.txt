@@ -1,0 +1,9 @@
+HashSet<Student>         scans=10000    unique=4352       137.1 ns/scan (sd 100.9)    25.7 B/unique
+TreeSet<Student>         scans=10000    unique=4352       314.4 ns/scan (sd 53.3)    40.0 B/unique
+HashMap<String,Student>  scans=10000    unique=4352        66.4 ns/scan (sd 22.4)    39.5 B/unique
+HashSet<Student>         scans=100000   unique=43222       72.9 ns/scan (sd 26.2)    38.1 B/unique
+TreeSet<Student>         scans=100000   unique=43222      615.6 ns/scan (sd 80.1)    40.1 B/unique
+HashMap<String,Student>  scans=100000   unique=43222       53.2 ns/scan (sd 12.9)    38.1 B/unique
+HashSet<Student>         scans=1000000  unique=432376     195.0 ns/scan (sd 32.2)    44.2 B/unique
+TreeSet<Student>         scans=1000000  unique=432376    1673.6 ns/scan (sd 84.2)    40.0 B/unique
+HashMap<String,Student>  scans=1000000  unique=432376     144.4 ns/scan (sd 17.5)    44.2 B/unique

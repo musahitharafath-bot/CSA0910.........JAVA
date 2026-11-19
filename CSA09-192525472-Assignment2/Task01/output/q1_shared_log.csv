@@ -1,0 +1,21 @@
+structure,trial,expected_length,actual_length,lost_appends,exception,ms
+StringBuilder (unsynchronised),1,400000,343263,56737,ArrayIndexOutOfBoundsException,27.3
+StringBuilder (unsynchronised),2,400000,286450,113550,none,4.8
+StringBuilder (unsynchronised),3,400000,378023,21977,none,3.9
+StringBuilder (unsynchronised),4,400000,324613,75387,none,7.1
+StringBuilder (unsynchronised),5,400000,382674,17326,none,6.0
+StringBuffer (synchronised),1,400000,400000,0,none,70.5
+StringBuffer (synchronised),2,400000,400000,0,none,43.3
+StringBuffer (synchronised),3,400000,400000,0,none,44.2
+StringBuffer (synchronised),4,400000,400000,0,none,41.5
+StringBuffer (synchronised),5,400000,400000,0,none,47.7
+StringBuilder + synchronized block,1,400000,400000,0,none,37.1
+StringBuilder + synchronized block,2,400000,400000,0,none,43.4
+StringBuilder + synchronized block,3,400000,400000,0,none,33.1
+StringBuilder + synchronized block,4,400000,400000,0,none,55.8
+StringBuilder + synchronized block,5,400000,400000,0,none,40.9
+ConcurrentLinkedQueue<String>,1,400000,400000,0,none,50.6
+ConcurrentLinkedQueue<String>,2,400000,400000,0,none,16.5
+ConcurrentLinkedQueue<String>,3,400000,400000,0,none,22.3
+ConcurrentLinkedQueue<String>,4,400000,400000,0,none,21.8
+ConcurrentLinkedQueue<String>,5,400000,400000,0,none,18.5

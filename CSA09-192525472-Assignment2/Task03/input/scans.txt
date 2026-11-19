@@ -1,0 +1,9 @@
+# gate,regNo,name  (one line per card scan; the same student may appear several times)
+Gate1,192311001,Arun
+Gate1,192311002,Divya
+Gate2,192311003,Karthik
+Gate3,192311001,Arun
+Gate2,192311004,Meena
+Gate1,192311002,Divya
+Gate3,192311005,Rahul
+Gate2,192311001,Arun

@@ -1,0 +1,33 @@
+=== Design A: Comparable vs design B: separate Comparators
+Comparator chain : [Sharks(12,10), Tigers(12,10), Lions(12,7), Eagles(9,6), Bisons(9,4), Panthers(9,4), Cobras(6,1), Falcons(6,1), Hawks(6,1), Rhinos(6,-2), Jaguars(3,0), Wolves(3,0)]
+Comparable       : [Sharks(12,10), Tigers(12,10), Lions(12,7), Eagles(9,6), Bisons(9,4), Panthers(9,4), Cobras(6,1), Falcons(6,1), Hawks(6,1), Rhinos(6,-2), Jaguars(3,0), Wolves(3,0)]
+Same result?       true
+Competition ranks without the name tie-break (equal items compare as equal): [1, 1, 3, 4, 5, 5, 7, 7, 7, 10, 11, 11]
+Same data, order by name only (another Comparator, no change to Team): [Bisons(9,4), Cobras(6,1), Eagles(9,6)]
+
+=== Wildcards and reuse for other types
+Players  : [Player[name=Asha, goals=9, assists=1], Player[name=Kiran, goals=7, assists=4], Player[name=Ravi, goals=7, assists=2]]
+Colleges : [College[name=ABC, gold=5, silver=3], College[name=SIMATS, gold=5, silver=2], College[name=XYZ, gold=2, silver=9]]
+Comparator<Object> accepted by RankedBoard<Team>: [Bisons(9,4), Cobras(6,1)]
+
+=== Test data 1: ties at every level (12 teams)
+Expected by hand: Sharks, Tigers (12,10 -> name), Lions(12,7), Eagles(9,6), Bisons/Panthers (9,4 -> name), Cobras/Falcons/Hawks (6,1 -> name), Rhinos(6,-2), Jaguars/Wolves (3,0 -> name)
+Actual   : [Sharks(12,10), Tigers(12,10), Lions(12,7), Eagles(9,6), Bisons(9,4), Panthers(9,4), Cobras(6,1), Falcons(6,1), Hawks(6,1), Rhinos(6,-2), Jaguars(3,0), Wolves(3,0)]
+Laws for GOOD comparator : reflexive violations 0, antisymmetry violations 0, transitivity violations 0
+Ranking independent of input order? true
+
+=== Test data 2: faulty comparators
+-- (a) NO_TIEBREAK ignores goal difference and name; result depends on input order (stable sort)
+   input order 1 -> [Sharks(12,10) Tigers(12,10) Lions(12,7) Panthers(9,4) Eagles(9,6) Bisons(9,4) Cobras(6,1) Falcons(6,1) Rhinos(6,-2) Hawks(6,1) Wolves(3,0) Jaguars(3,0)]
+   input order 2 -> [Lions(12,7) Tigers(12,10) Sharks(12,10) Bisons(9,4) Eagles(9,6) Panthers(9,4) Hawks(6,1) Rhinos(6,-2) Falcons(6,1) Cobras(6,1) Jaguars(3,0) Wolves(3,0)]
+   rankings equal? false
+   reflexive violations 0, antisymmetry violations 0, transitivity violations 0  (consistent, but ties are not broken as required)
+-- (b) SUBTRACT uses b.points - a.points; overflows for values of opposite sign near the int limits
+   correct   : [Alpha(2000000000,5) Echo(1500000000,-4) Charlie(5,2) Delta(0,0) Foxtrot(-1500000000,9) Bravo(-2000000000,3)]
+   subtract  : [Charlie(5,2) Delta(0,0) Foxtrot(-1500000000,9) Bravo(-2000000000,3) Alpha(2000000000,5) Echo(1500000000,-4)]
+   reflexive violations 0, antisymmetry violations 0, transitivity violations 24
+   compare(Alpha 2e9, Bravo -2e9): GOOD = -1, SUBTRACT = 294967296  (Alpha must rank first, i.e. negative)
+-- (c) TOLERANT treats points within 1 as equal; equality is not transitive
+   reflexive violations 0, antisymmetry violations 0, transitivity violations 1
+   sorting 400 random teams: IllegalArgumentException: Comparison method violates its general contract!
+   TOLERANT ranking of A(9) B(10) C(11): [A(9,0) B(10,0) C(11,0)] and reversed input: [C(11,0) B(10,0) A(9,0)]

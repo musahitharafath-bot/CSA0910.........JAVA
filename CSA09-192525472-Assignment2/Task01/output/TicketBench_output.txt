@@ -1,0 +1,35 @@
+All six approaches produce identical 50-field tickets (979 chars).
+
+== W1 short ticket (8 fields, 20000 repeats)
+String +                326 ns/ticket (sd 174)        1008 B/ticket  heap+12645 KB  intermediates: 7
+StringBuilder           274 ns/ticket (sd 151)         840 B/ticket  heap+12473 KB  intermediates: 0 (+3 array growths)
+StringBuffer            222 ns/ticket (sd 104)         840 B/ticket  heap+12534 KB  intermediates: 0 (+3 array growths)
+String.join             106 ns/ticket (sd 107)         248 B/ticket  heap+813 KB  intermediates: 0 (1 helper array)
+StringJoiner            163 ns/ticket (sd 74)         288 B/ticket  heap+1593 KB  intermediates: 0 (1 helper array)
+String.format           445 ns/ticket (sd 153)        1504 B/ticket  heap+15253 KB  intermediates: ~8 (format-specifier objects)
+
+== W2 heavy load (10000 tickets x 50 fields)
+String +               3788 ns/ticket (sd 463)       26992 B/ticket  heap+48642 KB  intermediates: 49
+StringBuilder           784 ns/ticket (sd 229)        3424 B/ticket  heap+23986 KB  intermediates: 0 (+5 array growths)
+StringBuffer            943 ns/ticket (sd 264)        3424 B/ticket  heap+26688 KB  intermediates: 0 (+5 array growths)
+String.join             433 ns/ticket (sd 176)        1240 B/ticket  heap+5181 KB  intermediates: 0 (1 helper array)
+StringJoiner           1095 ns/ticket (sd 210)        1608 B/ticket  heap+11823 KB  intermediates: 0 (1 helper array)
+String.format          2834 ns/ticket (sd 450)        7648 B/ticket  heap+5634 KB  intermediates: ~50 (format-specifier objects)
+
+== W3 group booking (100 tickets x 1000 fields)
+String +            1460633 ns/ticket (sd 34820)    10325792 B/ticket  heap+124725 KB  intermediates: 999
+StringBuilder         18565 ns/ticket (sd 2827)       94584 B/ticket  heap+2209 KB  intermediates: 0 (+10 array growths)
+StringBuffer          25429 ns/ticket (sd 8921)       94584 B/ticket  heap+5216 KB  intermediates: 0 (+10 array growths)
+String.join           18119 ns/ticket (sd 258)       24696 B/ticket  heap+2458 KB  intermediates: 0 (1 helper array)
+StringJoiner          28133 ns/ticket (sd 302)       29008 B/ticket  heap+2856 KB  intermediates: 0 (1 helper array)
+String.format         84236 ns/ticket (sd 26242)      184192 B/ticket  heap+7968 KB  intermediates: ~1000 (format-specifier objects)
+
+== Scaling sweep (one ticket)
+n=  100  +:        30373 ns  SB:      1891 ns  ratio 16.1x   bytes +: 103312  SB: 6728
+n=  200  +:        69662 ns  SB:      3091 ns  ratio 22.5x   bytes +: 409128  SB: 13432
+n=  400  +:       252431 ns  SB:      6158 ns  ratio 41.0x   bytes +: 1643312  SB: 26808
+n=  800  +:      1072600 ns  SB:     11246 ns  ratio 95.4x   bytes +: 6601616  SB: 53560
+n= 1600  +:      4193654 ns  SB:     21741 ns  ratio 192.9x   bytes +: 26658592  SB: 107640
+n= 3200  +:     15500121 ns  SB:     40622 ns  ratio 381.6x   bytes +: 108492712  SB: 216184
+n= 6400  +:     62885851 ns  SB:     82242 ns  ratio 764.6x   bytes +: 439200992  SB: 433256
+n=12800  +:    249851948 ns  SB:    178752 ns  ratio 1397.8x   bytes +: 1772698912  SB: 870184

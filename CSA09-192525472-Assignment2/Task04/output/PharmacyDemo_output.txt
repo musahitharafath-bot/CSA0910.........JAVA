@@ -1,0 +1,13 @@
+Lookup MED0762 -> Omeprazole 20mg / Omeprazole 20mg / Omeprazole 20mg
+
+REQUIRED code order : MED0015 95, MED0046 520, MED0107 340, MED0204 430, MED0311 150, MED0399 380, MED0420 1200, MED0588 610, MED0650 1040, MED0762 900, MED0871 260, MED0933 780
+REQUIRED added order: MED0420 1200, MED0107 340, MED0933 780, MED0015 95, MED0588 610, MED0311 150, MED0762 900, MED0204 430, MED0871 260, MED0046 520, MED0650 1040, MED0399 380
+
+HashMap        natural iteration: code order? false  added order? false
+LinkedHashMap  natural iteration: code order? false  added order? true 
+TreeMap        natural iteration: code order? true   added order? false
+
+HashMap + sort keys  -> code order correct? true  (extra O(n log n) sort)
+HashMap added order  -> cannot be recovered; a separate list or a sequence number is needed
+TreeMap code order   -> true with no extra work
+LinkedHashMap added  -> true with no extra work

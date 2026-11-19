@@ -1,0 +1,20 @@
+StringBuilder (unsynchronised)     trial 1: length  343263 / 400000  lost  56737  exception: ArrayIndexOutOfBoundsException 27.3 ms
+StringBuilder (unsynchronised)     trial 2: length  286450 / 400000  lost 113550  exception: none                         4.8 ms
+StringBuilder (unsynchronised)     trial 3: length  378023 / 400000  lost  21977  exception: none                         3.9 ms
+StringBuilder (unsynchronised)     trial 4: length  324613 / 400000  lost  75387  exception: none                         7.1 ms
+StringBuilder (unsynchronised)     trial 5: length  382674 / 400000  lost  17326  exception: none                         6.0 ms
+StringBuffer (synchronised)        trial 1: length  400000 / 400000  lost      0  exception: none                         70.5 ms
+StringBuffer (synchronised)        trial 2: length  400000 / 400000  lost      0  exception: none                         43.3 ms
+StringBuffer (synchronised)        trial 3: length  400000 / 400000  lost      0  exception: none                         44.2 ms
+StringBuffer (synchronised)        trial 4: length  400000 / 400000  lost      0  exception: none                         41.5 ms
+StringBuffer (synchronised)        trial 5: length  400000 / 400000  lost      0  exception: none                         47.7 ms
+StringBuilder + synchronized block trial 1: length  400000 / 400000  lost      0  exception: none                         37.1 ms
+StringBuilder + synchronized block trial 2: length  400000 / 400000  lost      0  exception: none                         43.4 ms
+StringBuilder + synchronized block trial 3: length  400000 / 400000  lost      0  exception: none                         33.1 ms
+StringBuilder + synchronized block trial 4: length  400000 / 400000  lost      0  exception: none                         55.8 ms
+StringBuilder + synchronized block trial 5: length  400000 / 400000  lost      0  exception: none                         40.9 ms
+ConcurrentLinkedQueue<String>      trial 1: length  400000 / 400000  lost      0  exception: none                         50.6 ms
+ConcurrentLinkedQueue<String>      trial 2: length  400000 / 400000  lost      0  exception: none                         16.5 ms
+ConcurrentLinkedQueue<String>      trial 3: length  400000 / 400000  lost      0  exception: none                         22.3 ms
+ConcurrentLinkedQueue<String>      trial 4: length  400000 / 400000  lost      0  exception: none                         21.8 ms
+ConcurrentLinkedQueue<String>      trial 5: length  400000 / 400000  lost      0  exception: none                         18.5 ms

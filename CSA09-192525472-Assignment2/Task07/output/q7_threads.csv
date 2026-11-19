@@ -1,0 +1,21 @@
+variant,rep,threads,tickets_per_second,all_tickets_correct
+Original (String +),1,2,413485,true
+Original (String +),2,2,368327,true
+Original (String +),3,2,387487,true
+Original (String +),4,2,302261,true
+Original (String +),5,2,339196,true
+Plain StringBuilder (Q1),1,2,2077812,true
+Plain StringBuilder (Q1),2,2,1853949,true
+Plain StringBuilder (Q1),3,2,1769964,true
+Plain StringBuilder (Q1),4,2,1211091,true
+Plain StringBuilder (Q1),5,2,1337622,true
+R1/R2 ThreadLocal reused builder,1,2,2013953,true
+R1/R2 ThreadLocal reused builder,2,2,2231262,true
+R1/R2 ThreadLocal reused builder,3,2,2481431,true
+R1/R2 ThreadLocal reused builder,4,2,4707040,true
+R1/R2 ThreadLocal reused builder,5,2,4733020,true
+One shared builder + lock (naive reuse),1,2,1484741,true
+One shared builder + lock (naive reuse),2,2,1854120,true
+One shared builder + lock (naive reuse),3,2,1852994,true
+One shared builder + lock (naive reuse),4,2,1756274,true
+One shared builder + lock (naive reuse),5,2,1881990,true

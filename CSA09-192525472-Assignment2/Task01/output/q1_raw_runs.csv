@@ -1,0 +1,229 @@
+workload,approach,rep,total_ns,tickets,fields
+"W1 short ticket (8 fields, 20000 repeats)",String +,1,3893611,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String +,2,6140696,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String +,3,4336884,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String +,4,4183671,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String +,5,10794478,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String +,6,12357960,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String +,7,11756854,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String +,8,11939031,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String +,9,8363450,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String +,10,5567528,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String +,11,3546338,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String +,12,3936744,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String +,13,3792962,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String +,14,3581342,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String +,15,3691098,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuilder,1,3018870,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuilder,2,7456276,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuilder,3,9362405,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuilder,4,11343357,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuilder,5,8793404,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuilder,6,5791286,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuilder,7,3071946,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuilder,8,3098438,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuilder,9,3910676,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuilder,10,9835495,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuilder,11,3265069,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuilder,12,3218240,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuilder,13,3083598,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuilder,14,3797695,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuilder,15,3167201,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuffer,1,3079426,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuffer,2,7290249,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuffer,3,8584528,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuffer,4,8357832,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuffer,5,6242880,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuffer,6,4023256,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuffer,7,3090493,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuffer,8,2993219,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuffer,9,3888724,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuffer,10,3120493,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuffer,11,3008366,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuffer,12,3020620,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuffer,13,3983792,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuffer,14,3013923,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringBuffer,15,3000250,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.join,1,4873601,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.join,2,1237643,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.join,3,1243930,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.join,4,1201651,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.join,5,8875540,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.join,6,1207820,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.join,7,1234026,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.join,8,1259217,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.join,9,1327034,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.join,10,1336488,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.join,11,3149709,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.join,12,1175855,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.join,13,1221634,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.join,14,1244750,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.join,15,1232336,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringJoiner,1,8543647,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringJoiner,2,2859877,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringJoiner,3,2649443,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringJoiner,4,3043043,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringJoiner,5,2853263,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringJoiner,6,3239533,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringJoiner,7,2567400,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringJoiner,8,2648164,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringJoiner,9,2911309,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringJoiner,10,2919094,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringJoiner,11,3665770,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringJoiner,12,2677447,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringJoiner,13,2684620,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringJoiner,14,2755006,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",StringJoiner,15,2805711,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.format,1,7529664,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.format,2,6755274,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.format,3,8078036,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.format,4,7653780,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.format,5,6766620,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.format,6,17175841,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.format,7,13983113,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.format,8,8146073,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.format,9,6979379,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.format,10,8346508,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.format,11,7892864,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.format,12,7063661,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.format,13,8051455,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.format,14,6934864,20000,8
+"W1 short ticket (8 fields, 20000 repeats)",String.format,15,12037710,20000,8
+"W2 heavy load (10000 tickets x 50 fields)",String +,1,54410575,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String +,2,36504648,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String +,3,36923931,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String +,4,36381312,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String +,5,37417477,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String +,6,36498302,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String +,7,36174215,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String +,8,35921760,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String +,9,35698367,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String +,10,38380608,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String +,11,36665868,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String +,12,37464588,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String +,13,36392938,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String +,14,36089707,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String +,15,37341572,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuilder,1,6333347,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuilder,2,7701141,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuilder,3,8078235,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuilder,4,11000206,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuilder,5,8764933,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuilder,6,14803674,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuilder,7,6757673,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuilder,8,6598648,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuilder,9,6678654,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuilder,10,6675218,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuilder,11,7698882,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuilder,12,6574096,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuilder,13,6783483,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuilder,14,6502653,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuilder,15,6593380,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuffer,1,7805970,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuffer,2,7968493,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuffer,3,8769838,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuffer,4,7720291,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuffer,5,9233313,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuffer,6,7650793,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuffer,7,11061393,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuffer,8,9495710,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuffer,9,16259686,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuffer,10,14737245,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuffer,11,8249300,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuffer,12,8170648,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuffer,13,7880947,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuffer,14,8772819,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringBuffer,15,7711671,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.join,1,4266499,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.join,2,3318686,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.join,3,4383558,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.join,4,3332454,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.join,5,3274680,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.join,6,3285969,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.join,7,7896552,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.join,8,8854097,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.join,9,5299505,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.join,10,3350053,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.join,11,3311705,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.join,12,3286047,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.join,13,3306029,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.join,14,4321612,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.join,15,3410969,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringJoiner,1,10561469,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringJoiner,2,9647223,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringJoiner,3,14926909,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringJoiner,4,14596886,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringJoiner,5,14419208,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringJoiner,6,11808838,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringJoiner,7,10877508,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringJoiner,8,8177896,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringJoiner,9,9388167,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringJoiner,10,9849787,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringJoiner,11,10475115,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringJoiner,12,9418031,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringJoiner,13,9076799,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringJoiner,14,10889777,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",StringJoiner,15,10138676,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.format,1,25667814,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.format,2,27015555,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.format,3,39184058,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.format,4,26648933,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.format,5,26284495,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.format,6,25754995,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.format,7,27851348,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.format,8,35439877,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.format,9,25522843,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.format,10,25389844,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.format,11,24178196,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.format,12,25529527,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.format,13,25252687,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.format,14,31438324,10000,50
+"W2 heavy load (10000 tickets x 50 fields)",String.format,15,34013988,10000,50
+"W3 group booking (100 tickets x 1000 fields)",String +,1,143949313,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String +,2,146447677,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String +,3,144207106,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String +,4,151526660,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String +,5,149727238,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String +,6,140384702,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String +,7,145331312,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String +,8,146932050,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringBuilder,1,1748024,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringBuilder,2,2542008,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringBuilder,3,1788497,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringBuilder,4,1712944,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringBuilder,5,1724359,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringBuilder,6,1885071,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringBuilder,7,1720056,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringBuilder,8,1731380,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringBuffer,1,3092353,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringBuffer,2,2196163,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringBuffer,3,2300742,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringBuffer,4,1886335,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringBuffer,5,2543550,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringBuffer,6,1843313,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringBuffer,7,1976127,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringBuffer,8,4504650,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String.join,1,1806364,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String.join,2,1841102,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String.join,3,1790090,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String.join,4,1821232,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String.join,5,1785408,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String.join,6,1811524,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String.join,7,1854436,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String.join,8,1785086,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringJoiner,1,2862546,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringJoiner,2,2822939,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringJoiner,3,2828583,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringJoiner,4,2810110,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringJoiner,5,2755593,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringJoiner,6,2800588,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringJoiner,7,2805172,100,1000
+"W3 group booking (100 tickets x 1000 fields)",StringJoiner,8,2821250,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String.format,1,9057158,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String.format,2,6613499,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String.format,3,5634547,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String.format,4,6490271,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String.format,5,5660249,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String.format,6,11552609,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String.format,7,10820405,100,1000
+"W3 group booking (100 tickets x 1000 fields)",String.format,8,11560336,100,1000

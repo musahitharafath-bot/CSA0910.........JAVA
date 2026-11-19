@@ -1,0 +1,28 @@
+HashMap           n=1000    build     0.31 ms | 100k lookups    1.40 ms (14 ns each) | code report     0.72 ms [sorted] | added report     0.58 ms [sorted] | p50 61 ns p99 300 ns | 40 B/med
+TreeMap           n=1000    build     0.36 ms | 100k lookups   14.22 ms (142 ns each) | code report     0.20 ms [native] | added report     0.48 ms [sorted] | p50 214 ns p99 328 ns | 40 B/med
+LinkedHashMap     n=1000    build     0.11 ms | 100k lookups    5.96 ms (60 ns each) | code report     0.51 ms [sorted] | added report     0.21 ms [native] | p50 62 ns p99 317 ns | 48 B/med
+Hashtable         n=1000    build     0.30 ms | 100k lookups    2.98 ms (30 ns each) | code report     0.35 ms [sorted] | added report     0.36 ms [sorted] | p50 122 ns p99 446 ns | 38 B/med
+ConcurrentHashMap n=1000    build     0.68 ms | 100k lookups    2.45 ms (24 ns each) | code report     0.47 ms [sorted] | added report     0.63 ms [sorted] | p50 61 ns p99 355 ns | 40 B/med
+SortedArray       n=1000    build(sort)     0.60 ms | 100k lookups   14.23 ms (142 ns each) | code report     0.04 ms | 200 inserts 0.56 ms (3 us each)
+
+HashMap           n=10000   build     2.21 ms | 100k lookups    1.66 ms (17 ns each) | code report     5.66 ms [sorted] | added report     3.94 ms [sorted] | p50 95 ns p99 670 ns | 39 B/med
+TreeMap           n=10000   build     3.22 ms | 100k lookups   26.24 ms (262 ns each) | code report     1.27 ms [native] | added report     3.05 ms [sorted] | p50 300 ns p99 1043 ns | 40 B/med
+LinkedHashMap     n=10000   build     0.73 ms | 100k lookups    1.77 ms (18 ns each) | code report     4.31 ms [sorted] | added report     0.93 ms [native] | p50 92 ns p99 650 ns | 47 B/med
+Hashtable         n=10000   build     0.71 ms | 100k lookups    2.60 ms (26 ns each) | code report     1.67 ms [sorted] | added report     2.43 ms [sorted] | p50 163 ns p99 594 ns | 42 B/med
+ConcurrentHashMap n=10000   build     1.37 ms | 100k lookups    2.90 ms (29 ns each) | code report     4.21 ms [sorted] | added report     2.89 ms [sorted] | p50 98 ns p99 603 ns | 39 B/med
+SortedArray       n=10000   build(sort)    11.65 ms | 100k lookups   23.04 ms (230 ns each) | code report     0.35 ms | 200 inserts 0.35 ms (2 us each)
+
+HashMap           n=100000  build    19.10 ms | 100k lookups    2.67 ms (27 ns each) | code report    50.61 ms [sorted] | added report    52.01 ms [sorted] | p50 377 ns p99 845 ns | 53 B/med
+TreeMap           n=100000  build    65.05 ms | 100k lookups   72.51 ms (725 ns each) | code report    16.92 ms [native] | added report    49.79 ms [sorted] | p50 893 ns p99 2214 ns | 40 B/med
+LinkedHashMap     n=100000  build    22.85 ms | 100k lookups    3.55 ms (35 ns each) | code report    80.93 ms [sorted] | added report     2.90 ms [native] | p50 358 ns p99 818 ns | 61 B/med
+Hashtable         n=100000  build    12.21 ms | 100k lookups    4.46 ms (45 ns each) | code report    41.61 ms [sorted] | added report    34.07 ms [sorted] | p50 365 ns p99 846 ns | 43 B/med
+ConcurrentHashMap n=100000  build    23.68 ms | 100k lookups    2.76 ms (28 ns each) | code report    50.15 ms [sorted] | added report    40.73 ms [sorted] | p50 369 ns p99 846 ns | 53 B/med
+SortedArray       n=100000  build(sort)    71.12 ms | 100k lookups   52.02 ms (520 ns each) | code report    12.30 ms | 200 inserts 0.73 ms (4 us each)
+
+HashMap           n=500000  build    71.10 ms | 100k lookups    3.85 ms (38 ns each) | code report   246.90 ms [sorted] | added report   304.89 ms [sorted] | p50 443 ns p99 913 ns | 43 B/med
+TreeMap           n=500000  build   595.53 ms | 100k lookups  125.89 ms (1259 ns each) | code report    76.00 ms [native] | added report   319.27 ms [sorted] | p50 1663 ns p99 3352 ns | 40 B/med
+LinkedHashMap     n=500000  build   106.17 ms | 100k lookups    7.52 ms (75 ns each) | code report   585.22 ms [sorted] | added report    46.35 ms [native] | p50 498 ns p99 1045 ns | 51 B/med
+Hashtable         n=500000  build    96.21 ms | 100k lookups   10.73 ms (107 ns each) | code report   247.23 ms [sorted] | added report   349.33 ms [sorted] | p50 520 ns p99 1087 ns | 40 B/med
+ConcurrentHashMap n=500000  build   173.62 ms | 100k lookups    8.34 ms (83 ns each) | code report   296.85 ms [sorted] | added report   418.86 ms [sorted] | p50 580 ns p99 3200 ns | 43 B/med
+SortedArray       n=500000  build(sort)   566.80 ms | 100k lookups  110.35 ms (1104 ns each) | code report    79.34 ms | 200 inserts 7.40 ms (37 us each)
+

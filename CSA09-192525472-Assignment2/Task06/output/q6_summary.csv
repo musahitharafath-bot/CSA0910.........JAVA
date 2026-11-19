@@ -1,0 +1,11 @@
+design,n,admit_ns_per_op,admit_sd,serve_ns_per_op,serve_sd,retained_bytes_per_patient
+PriorityQueue,1000,96.2,9.3,263.9,28.7,4.7
+SortedLinkedList,1000,2429.8,2536.2,45.3,9.2,24.0
+FiveFifoQueues,1000,128.2,45.2,196.4,77.8,5.3
+PriorityQueue,10000,56.8,2.8,317.1,7.4,5.3
+SortedLinkedList,10000,15262.1,787.0,18.8,19.1,24.0
+FiveFifoQueues,10000,46.7,2.2,38.9,0.9,5.7
+PriorityQueue,100000,45.4,15.9,315.5,11.1,10.5
+FiveFifoQueues,100000,12.4,7.2,8.8,0.6,4.3
+PriorityQueue,1000000,56.7,12.6,474.0,35.9,5.2
+FiveFifoQueues,1000000,15.4,5.5,9.6,2.2,5.2

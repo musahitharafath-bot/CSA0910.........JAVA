@@ -1,0 +1,18 @@
+Comparator chain (List.sort)           n=10000         4.30 ms (sd 0.48)  sorts=1     5.2 B/element  same as chain: true
+Comparator chain (Collections.sort)    n=10000         4.78 ms (sd 2.25)  sorts=1     5.2 B/element  same as chain: true
+Hand-written comparator                n=10000         6.06 ms (sd 3.38)  sorts=1     5.2 B/element  same as chain: true
+Three stable sorts                     n=10000        12.04 ms (sd 2.84)  sorts=3    15.6 B/element  same as chain: true
+Comparable (Collections.sort)          n=10000         3.35 ms (sd 0.71)  sorts=1     5.2 B/element  same as chain: true
+
+Comparator chain (List.sort)           n=100000       48.22 ms (sd 2.84)  sorts=1     4.6 B/element  same as chain: true
+Comparator chain (Collections.sort)    n=100000       46.64 ms (sd 1.70)  sorts=1     4.6 B/element  same as chain: true
+Hand-written comparator                n=100000       36.09 ms (sd 0.97)  sorts=1     4.6 B/element  same as chain: true
+Three stable sorts                     n=100000      126.46 ms (sd 15.39)  sorts=3    13.8 B/element  same as chain: true
+Comparable (Collections.sort)          n=100000       39.90 ms (sd 2.63)  sorts=1     4.6 B/element  same as chain: true
+
+Comparator chain (List.sort)           n=1000000     996.65 ms (sd 108.15)  sorts=1     4.1 B/element  same as chain: true
+Comparator chain (Collections.sort)    n=1000000     871.15 ms (sd 21.55)  sorts=1     4.1 B/element  same as chain: true
+Hand-written comparator                n=1000000     722.01 ms (sd 11.40)  sorts=1     4.1 B/element  same as chain: true
+Three stable sorts                     n=1000000    1673.80 ms (sd 52.45)  sorts=3    12.3 B/element  same as chain: true
+Comparable (Collections.sort)          n=1000000    1028.80 ms (sd 166.75)  sorts=1     4.1 B/element  same as chain: true
+

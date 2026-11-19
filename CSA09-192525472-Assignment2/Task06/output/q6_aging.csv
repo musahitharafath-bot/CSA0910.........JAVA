@@ -1,0 +1,7 @@
+rule,W_minutes,asha_wait_min,mean_wait_s1_min,mean_wait_s2_min,max_wait_any_min
+strict,0,3600,0.3,745.8,3600
+aged,10,47,300.4,302.7,607
+aged,30,126,290.8,316.8,621
+aged,60,261,276.8,337.5,637
+aged,120,519,249.9,377.3,670
+aged,240,1041,200.5,450.3,1041

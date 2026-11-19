@@ -1,0 +1,12 @@
+PNR=2845917360
+Passenger=Arun Kumar
+Passenger=Divya Raman
+Coach=S5
+Berth=34 SU
+Fare=1285.50
+Train=12625 Kerala Express
+From=NDLS New Delhi
+To=TVC Thiruvananthapuram
+Date=2026-11-12
+Class=SL
+Status=CNF

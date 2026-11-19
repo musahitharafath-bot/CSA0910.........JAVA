@@ -1,0 +1,16 @@
+approach,n,mean_ms,sd_ms,median_ms,sorts,bytes_allocated_per_element,identical_to_chain
+Comparator chain (List.sort),10000,4.30,0.48,4.17,1,5.2,true
+Comparator chain (Collections.sort),10000,4.78,2.25,4.02,1,5.2,true
+Hand-written comparator,10000,6.06,3.38,5.70,1,5.2,true
+Three stable sorts,10000,12.04,2.84,11.43,3,15.6,true
+Comparable (Collections.sort),10000,3.35,0.71,3.11,1,5.2,true
+Comparator chain (List.sort),100000,48.22,2.84,47.76,1,4.6,true
+Comparator chain (Collections.sort),100000,46.64,1.70,46.83,1,4.6,true
+Hand-written comparator,100000,36.09,0.97,35.90,1,4.6,true
+Three stable sorts,100000,126.46,15.39,123.49,3,13.8,true
+Comparable (Collections.sort),100000,39.90,2.63,39.48,1,4.6,true
+Comparator chain (List.sort),1000000,996.65,108.15,976.29,1,4.1,true
+Comparator chain (Collections.sort),1000000,871.15,21.55,859.33,1,4.1,true
+Hand-written comparator,1000000,722.01,11.40,718.78,1,4.1,true
+Three stable sorts,1000000,1673.80,52.45,1690.12,3,12.3,true
+Comparable (Collections.sort),1000000,1028.80,166.75,931.40,1,4.1,true

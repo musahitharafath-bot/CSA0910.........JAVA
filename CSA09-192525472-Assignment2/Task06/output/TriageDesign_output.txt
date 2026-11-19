@@ -1,0 +1,18 @@
+=== Correctness check on 8 patients (hand-worked answer)
+Hand-worked order : Meena Kumar Arun Lata Divya Ravi John Asha
+  (S1: Meena@1, Kumar@4, Arun@7 | S2: Lata@5, Divya@6 | S3: Ravi@0, John@2 | S5: Asha@3)
+Printing the PriorityQueue directly (heap array order, NOT treatment order):
+  [Meena(S1@1), Kumar(S1@4), Lata(S2@5), Arun(S1@7), Ravi(S3@0), John(S3@2), Divya(S2@6), Asha(S5@3)]
+Waiting list (sorted copy, O(n log n) to display): Meena Kumar Arun Lata Divya Ravi John Asha
+Order produced by poll()                         : Meena Kumar Arun Lata Divya Ravi John Asha
+Matches hand-worked answer? true
+
+=== Starvation: 1.2 patients per minute arrive (60% S1, 40% S2); the doctor treats one per minute (overload)
+A severity-5 patient (Asha) arrives at minute 0. Arrival stops at minute 3000; remaining patients are then treated.
+rule                       Asha waits (min)   mean wait S1 (min)     mean wait S2 (min)    
+strict severity            3600 (after the surge) 0.3                    745.8                 
+aged, W = 10 min/level     47                 300.4                  302.7                 
+aged, W = 30 min/level     126                290.8                  316.8                 
+aged, W = 60 min/level     261                276.8                  337.5                 
+aged, W = 120 min/level    519                249.9                  377.3                 
+aged, W = 240 min/level    1041               200.5                  450.3                 

@@ -1,0 +1,25 @@
+Original, plain StringBuilder, redesign R1 and R2 produce identical tickets: true (979 chars)
+
+== W1 short ticket (8 fields, 20000 repeats)  (ticket text = 154 chars)
+Original (String +)                         327 ns/ticket (sd 219)        1008 B/ticket  0.35 GCs/run
+Plain StringBuilder (Q1)                    363 ns/ticket (sd 136)         840 B/ticket  0.10 GCs/run
+R1 reused builder -> String                 105 ns/ticket (sd 35)         176 B/ticket  0.05 GCs/run
+R2 reused builder -> page buffer             55 ns/ticket (sd 6)           0 B/ticket  0.00 GCs/run
+
+== W2 heavy load (10000 tickets x 50 fields)  (ticket text = 979 chars)
+Original (String +)                        4036 ns/ticket (sd 482)       26992 B/ticket  0.95 GCs/run
+Plain StringBuilder (Q1)                    696 ns/ticket (sd 56)        3424 B/ticket  0.10 GCs/run
+R1 reused builder -> String                 461 ns/ticket (sd 36)        1000 B/ticket  0.05 GCs/run
+R2 reused builder -> page buffer            313 ns/ticket (sd 7)           0 B/ticket  0.00 GCs/run
+
+== W3 group booking (100 tickets x 1000 fields)  (ticket text = 20639 chars)
+Original (String +)                     1567351 ns/ticket (sd 52290)    10325792 B/ticket  3.40 GCs/run
+Plain StringBuilder (Q1)                  18179 ns/ticket (sd 457)       94584 B/ticket  0.10 GCs/run
+R1 reused builder -> String                9351 ns/ticket (sd 233)       20656 B/ticket  0.00 GCs/run
+R2 reused builder -> page buffer           7025 ns/ticket (sd 80)           0 B/ticket  0.00 GCs/run
+
+== Two worker threads, 10000 tickets x 50 fields each (throughput)
+Original (String +)                            339196 tickets/s   all tickets correct: true
+Plain StringBuilder (Q1)                      1337622 tickets/s   all tickets correct: true
+R1/R2 ThreadLocal reused builder              4733020 tickets/s   all tickets correct: true
+One shared builder + lock (naive reuse)       1881990 tickets/s   all tickets correct: true
