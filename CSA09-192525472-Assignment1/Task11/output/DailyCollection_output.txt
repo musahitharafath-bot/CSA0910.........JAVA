@@ -1,0 +1,3 @@
+Parking  : Rs 210.0
+Charging : Rs 120.0
+Total    : Rs 330.0

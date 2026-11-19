@@ -1,0 +1,15 @@
+id,scenario,input,expected
+T1,Two-wheeler 130 min,130,30
+T2,Car 130 min,130,90
+T3,EV 130 min + 10 kWh,130+10kWh,210
+T4,Zero-minute stay,0,0
+T5,Exactly 60 minutes,60,30
+T6,Last free slot,allocate,slot returned
+T7,Facility full,allocate,null
+T8,Release occupied slot,release,true
+T9,Release twice,release,false
+T10,Negative duration,-1,rejected
+T11,Invalid floor,release(3;0),false
+T15,61 minutes car,61,60
+T18,Negative kWh,-5,rejected
+T19,Blank registration,blank,rejected

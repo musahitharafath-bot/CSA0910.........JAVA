@@ -1,0 +1,5 @@
+Slot[F1-S4, free]
+true
+false
+Slot[F1-S4, TN01A1]
+true false

@@ -1,0 +1,4 @@
+E-bike 90 min : 15
+Van 08:30-10:00: 90.00
+Pass valid now : true
+Pass next day  : false

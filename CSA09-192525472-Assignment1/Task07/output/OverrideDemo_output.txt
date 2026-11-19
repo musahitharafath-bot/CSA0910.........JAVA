@@ -1,0 +1,5 @@
+Car[TN02B2]
+a.equals(b) = true
+a == b      = false
+HashSet size = 1
+Rates: 10.0 / 30.0

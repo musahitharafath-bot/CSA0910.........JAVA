@@ -1,0 +1,15 @@
+PASS T1  two-wheeler, 130 min = 30
+PASS T2  car, 130 min = 90
+PASS T3  EV, 130 min + 10 kWh = 210
+PASS T4  zero minutes = 0
+PASS T5  exactly 60 min = 1 hour
+PASS T15 61 min = 2 hours
+PASS T10 negative duration rejected
+PASS T18 negative kWh rejected
+PASS T19 blank registration rejected
+PASS T6  last free slot allocated
+PASS T7  full facility returns null
+PASS T8  occupied slot released
+PASS T9  second release fails
+PASS T11 invalid floor rejected
+14 passed, 0 failed

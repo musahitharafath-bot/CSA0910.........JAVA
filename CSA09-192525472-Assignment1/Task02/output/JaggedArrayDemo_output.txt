@@ -1,0 +1,4 @@
+Floor 0: 20 slots, 20 free
+Floor 1: 30 slots, 29 free
+Floor 2: 50 slots, 50 free
+Total slots: 100
